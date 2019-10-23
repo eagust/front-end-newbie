@@ -1,32 +1,73 @@
-<!DOCTYPE html>
+<br /><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <!-- <link rel="font" type="" href="https://fonts.google.com/specimen/Josefin+Sans" /> -->
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      font-family: Arial;
+      background-image: url(images/bg-pattern-desktop.svg), url(images/hero-desktop.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: 0 0, 100% 0;
+      background-size: contain;
+      padding-left: 75px;
+    }
+    form{
+      padding-top: 50px;
+    }
+    .logo{
+      padding-top: 50px;
+
+    }
+    /*background: background-color background-image background-repeat background-attachment background-position */
+    /* .left{
+      background: url(images/bg-pattern-desktop.svg) no-repeat left;
+    }
+    .right{
+      background: url(images/hero-desktop.jpg) no-repeat right;
+    } */
   </style>
 </head>
 <body>
+  <main>
+    <div class="left">
+      <div class="logo">
+        <img src="images/logo.svg"/>
+      </div>
+      <h1>We're</h1><br />
+      <h2>coming</h2><br />
+      <h2>soon</h2><br />
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <!-- Email Address Form -->
+      <br />
+      <form action="submission.html" method="post">
+        <section class="email">
+          <input id="email" name="email" type="text" pattern="[a-zA-Z0-9._]+@[a-zA-Z]+.[a-z]{2,}" required/>
+          <input type="submit" value="Submit">
+        </section>
+      </form>
+    </div>
 
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
+    <div class="right">
+      <!-- <img src="images/hero-desktop.jpg" />-->
+    </div>
+  </main>
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Edrienne</a>.
     </p>
   </footer>
 </body>
